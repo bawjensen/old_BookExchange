@@ -1,0 +1,442 @@
+#container {
+  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+  margin-right: auto;
+  margin-left: auto; 
+  width: 900px;
+}
+
+div {
+  /*border: 1px dotted gray;*/
+}
+
+textarea,
+input[type=search],
+input[type=number],
+input[type=password],
+input[type=text] {
+  display: block;
+  border: 1px solid #E5E5E5;
+  outline: 0;
+  border-radius: 3px;
+  padding: 3px;
+}
+
+input[type=search],
+input[type=number],
+input[type=password],
+input[type=text] {
+  width: 200px;
+
+  -webkit-transition: .25s;
+          transition: .25s;
+}
+
+textarea:focus,
+input:focus {
+  border: 1px solid #00E6CC;
+}
+
+legend {
+  font-size: 30px;
+  border-bottom: 1px solid #00D6EB;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: #00D6EB;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  border-bottom: 1px solid #00D1F5;
+  border-right: 1px solid #E5E5E5;
+  /*min-width: 100px;*/
+  text-align: center;
+}
+
+tr:hover {
+  background: #FAFEFF;
+}
+
+.hidden {
+  display: none;
+}
+
+.viewblockwrapper {
+  display: block;
+  clear: both;
+  width: 100%;
+}
+
+/* Header Styling */
+
+#header {
+  padding-bottom: 5px;
+  border-bottom: 1px solid #8CA3E8;
+  color: inherit;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+#header a {
+  text-decoration: none;
+}
+
+#headerwebsitename {
+  font-size: 30px;
+  color: #0033CC;
+}
+
+#headerpagetitle {
+  font-size: 20px;
+  color: #0033CC;
+}
+
+.headerlinks {
+  float: right;
+  clear: right;
+  font-size: 15px;
+  color: #4C70DB;
+}
+
+/* Footer Styling */
+
+#footer {
+  padding-top: 5px;
+  border-top: 1px solid #8CA3E8;
+  font-size: 14px;
+  margin-top: 30px;
+  color: #0033CC;
+}
+
+/* DisplayArrayOffers Styling */
+
+/*#savealloffers {
+  background: #009900;
+  font-weight: 700;
+  padding: 2px;
+}*/
+
+#savealloffers {
+  display: none;
+  position: fixed;
+  left: 5px;
+  top: 5px;
+  z-index: 5;
+  font-family: impact;
+  font-weight: bold;
+  color: #FFFFFF;
+  box-shadow: 2px 2px 5px 2px #444444;
+  padding: 5px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 3px;
+  /*border: 6px outset #1AA328;*/
+  background: #15B60B;
+/*  background: linear-gradient(top,  #07EE07,  #2B6110);
+  background: -ms-linear-gradient(top,  #07EE07,  #2B6110);
+  background: -webkit-gradient(linear, left top, left bottom, from(#07EE07), to(#2B6110));
+  background: -moz-linear-gradient(top,  #07EE07,  #2B6110);*/
+  cursor: pointer;
+}
+
+.offerdiv {
+  float: left;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.offercoursediv {
+  float: left;
+  clear: left;
+  width: 130px;
+  text-align: center;
+  font-size: 20px;
+  color: #8C8C8C;
+  margin: 2px;
+}
+
+.offertitlediv {
+  font-size: 30px;
+  color: #8C8C8C;
+  margin: 2px;
+  margin-left: 140px;
+  margin-right: 200px;
+}
+
+.offertextdiv {
+  font-size: 14px;
+  margin: 2px;
+  margin-left: 140px;
+  margin-right: 200px;
+}
+
+.offerpricediv {
+  float: right;
+  font-size: 50px;
+  color: #D9D9D9;
+  width: 125px;
+  text-align: center;
+  margin: 2px;
+}
+
+.offersellerdiv {
+  font-size: 12px;
+  float: right;
+}
+
+.offerdeleteoption {
+  float: left;
+  clear: left;
+  color: green;
+  position: absolute;
+  right: 0px;
+  bottom: -15px;
+}
+
+.alterlink {
+  display: none;
+  position: absolute;
+  opacity: 0.3;
+  -webkit-transform: scale(.85);
+      -ms-transform: scale(.85);
+          transform: scale(.85);
+}
+
+.offerdelete {
+  left: -4px;
+  top: 0px;
+}
+
+.offeredit {
+  left: -5px;
+  top: 15px;
+  cursor: pointer;
+}
+
+.editmode {
+  border-radius: 5px;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 5px 2px #444444;
+}
+
+/* Mainpage Styling */
+
+#mainbody {
+  clear: both;
+  width: 100%;
+  min-height: 800px;
+}
+
+#sellingdiv {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 90px 0px;
+  text-align: center;
+  font-size: 30px;
+  color: #FFFFFF;
+  background: #00E0D6;
+}
+
+.mainpagelinks {
+  text-decoration: none;
+}
+
+/* Buying Styling */
+/* Selling Styling */
+
+.createofferinput {
+  display: inline-block;
+}
+
+#offermain {
+  float: left;
+  text-align: center;
+  margin-right: 20px;
+}
+
+#offersecondary {
+  float: left;
+}
+
+textarea.createofferinput {
+  min-height: 100px;
+  min-width: 300px;
+}
+
+
+/* Searching Styling */
+
+#searchingdiv {
+  display: block;
+  clear: left;
+  margin-bottom: 50px;
+}
+
+#searchingdiv input[type=search] {
+  display: inline;
+}
+
+#resultsheader {
+  display: block;
+  clear: left;
+  margin-bottom: 20px;
+}
+
+#searchresults {
+  border: 1px solid #AAAAAA;
+  list-style-type: none;
+  padding: 10px;
+}
+
+#searchresults li {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 5px 0px;
+}
+#searchresults li.odd {
+  background: #FAFAFA;
+}
+#searchresults li a {
+  text-decoration: none;
+}
+
+.searchresultimage {
+  height: auto;
+  max-width: 75px;
+}
+
+.resultimagediv {
+  display: inline-block;
+}
+
+.resulttextdiv {
+  display: inline-block;
+  width: 700px;
+}
+
+/* Viewbook Styling */
+
+#titlesdiv {
+  float: left;
+  font-size: 40px;
+  width: 600px;
+  margin-bottom: 50px;
+}
+
+#bookimagediv {
+  float: right;
+}
+
+#bookimage {
+  min-height: 200px;
+  max-height: 300px;
+  max-width: 250px;
+  width: auto;
+  height: auto;
+}
+
+#offerbook {
+  display: block;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#notloggedindiv {
+  display: block;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+#bookoffer {
+  clear: both;
+  margin-left: 100px;
+  width: 600px;
+  height: 300px;
+}
+#bookoffer input {
+  float: left;
+  width: 500px;
+}
+#bookoffer label {
+  float: left;
+  clear: left;
+  width: 75px;
+}
+
+input#createbookoffer {
+  width: auto;
+  position: relative;
+  right: -600px;
+  top: -125px;
+  padding: 20px;
+  background: #549AE4;
+  border: none;
+  color: #FFFFFF;
+  line-height: 22px;
+  cursor: pointer;
+
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-border-radius: 6px;
+     -moz-border-radius: 6px;
+          border-radius: 6px;
+  -webkit-backface-visibility: hidden;
+}
+
+#bookinfotable {
+  clear: both;
+}
+
+#bookinfotable td {
+  display: inline-block;
+  min-height: 30px;
+  text-align: center;
+}
+
+.bookheadercolumn {
+  width: 120px;
+  border: none;
+}
+
+.bookinfocolumn {
+  width: 650px;
+}
+
+#bookdescription {
+  max-height: 200px;
+  overflow: auto;
+}
+
+.googlepricetooltip:hover {
+  cursor: pointer;
+}
+.googlepricetooltip:hover:after {
+  position: absolute;
+  left: 120px;
+  content: 'Price is supplied by Google Books. Take it with a grain of salt.';
+  border: 1px dashed gray;
+  background: #FFFFFF;
+  padding: 2px;
+  box-shadow: 2px 2px 3px 1px #99EFF7;
+}
+
+/* Account Styling */
+/* Login Styling */
+
+#loginregistererrormessages {
+  color: red;
+}
